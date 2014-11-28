@@ -617,7 +617,7 @@ public class MessageViewerActivity extends CloudBackendSherlockFragmentActivity 
 	private void setCodeDetails(String description) {
 		mProductDetails = description;
 		if (!TextUtils.isEmpty(mProductDetails)) {
-			mCodeContents.setText(mCodeContents.getText() + " � " + mProductDetails);
+			mCodeContents.setText(mCodeContents.getText() + " - " + mProductDetails);
 		}
 	}
 
