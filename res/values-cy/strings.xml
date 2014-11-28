@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">MonTag</string>
+    <string name="language_name">Cymraeg</string>
+    <string name="title_message_editor">Ychwanegu neges (%1$s)</string>
+    <string name="title_clipping_editor">Cadw neges (%1$s)</string>
+    <string name="title_clipping_editor_no_length">Toriad MonTag</string>
+    <string name="title_saved_messages">Negeseuon wedi\'u cadw</string>
+    <string name="title_posted_messages">Negeseuon yr wyf wedi\'u postio</string>
+    <string name="title_questionnaire">Gwella MonTag</string>
+
+    <!-- menu items -->
+    <string name="menu_add_content">Ychwanegu neges MonTag</string>
+    <string name="menu_overflow">Dangos rhagor o opsiynau</string>
+    <string name="menu_scan_again">Sganio cod arall</string>
+    <string name="menu_refresh">Adnewyddu</string>
+    <string name="menu_add_location">Ychwanegu eich lleoliad</string>
+    <string name="menu_remove_location">Cael gwared ar eich lleoliad</string>
+    <string name="menu_import_link">Mewnforio dolen</string>
+    <string name="menu_import_clipping">Mewnforio neges</string>
+    <string name="menu_clippings_library">Negeseuon wedi\'u cadw</string>
+    <string name="menu_visitor_guide">Pedia-Trefynwy fideo</string>
+    <string name="menu_change_language">Switch to English</string>
+    <string name="menu_my_tags">Negeseuon yr wyf wedi\'u postio</string>
+    <string name="menu_add_clipping">Ychwanegu neges wedi\'i chadw</string>
+    <string name="menu_add_bookmark">Ychwanegu dolen</string>
+
+    <!-- hints / message dialogs -->
+    <string name="message_text_hint">Beth yw eich neges MonTag?</string>
+    <string name="empty_list_hint">%1$s – beth am ychwanegu un?</string>
+    <string name="no_nearby_messages">Dim negeseuon wedi\'u canfod yn agos</string>
+    <string name="no_self_messages">Dydych chi heb osod unrhyw negeseuon ar y cod hwn</string>
+    <string name="no_popular_messages">Dim negeseuon MonTag poblogaidd wedi\'u canfod</string>
+    <string name="no_recent_messages">Dim negeseuon MonTag diweddar wedi\'u canfod</string>
+    <string name="new_message">Neges MonTag newydd</string>
+    <string name="save_message">Cadw\'r neges?</string>
+    <string name="message_options">Opsiynau neges</string>
+    <string name="clipping_options">Opsiynau neges</string>
+    <string name="add_to_clippings">Cadw\'r neges</string>
+    <string name="report_item">Adrodd neges</string>
+    <string name="delete_item">Dileu neges</string>
+    <string name="item_added_to_clippings">Mae\'r eitem wedi\'i hychwanegu at eich negeseuon sydd wedi\'u cadw</string>
+    <string name="item_reported">Diolch – mae\'r neges hon wedi\'i hadrodd</string>
+    <string name="item_deleted">Wedi\'i ddileu – bydd y neges hon yn ymddangos mwyach</string>
+    <string name="loading_messages">Llwytho %1$s ar gyfer y cod hwn</string>
+    <string name="loading_recent">negeseuon diweddar</string>
+    <string name="loading_nearby">negeseuon cyfagos</string>
+    <string name="loading_popular">negeseuon poblogaidd</string>
+    <string name="loading_your">eich negeseuon</string>
+
+    <!-- error dialogs -->
+    <string name="message_posting_cancel_title">Diddymu neges</string>
+    <string name="message_posting_cancel_message">Mae\'r neges hon yn cymryd amser hir i anfon – roi\'r gorau i anfon?</string>
+    <string name="message_posting_cancel_wait">Aros</string>
+    <string name="message_posting_cancel_stop">Stopio</string>
+    <string name="no_internet_hint">Cysylltiad wedi methu – Mae angen mynediad rhwydwaith ar MonTag i %1$s negeseuon</string>
+    <string name="no_internet_task_view">weld</string>
+    <string name="no_internet_task_post">postio</string>
+    <string name="no_saved_messages">Dydych chi heb gadw unrhyw negeseuon eto. Storiwch doriadau yma i ychwanegu eich neges yn gyflym i unrhyw god.</string>
+    <string name="no_saved_messages_toast">Dydych chi heb gadw unrhyw negeseuon eto</string>
+    <string name="no_posted_messages">Dydych chi heb ychwanegu unrhyw negeseuon at godau eto. Pan fyddwch yn postio neges, bydd yn ymddangos yma.</string>
+    <string name="no_bookmarks">Ni ddaethpwyd o hyd i unrhyw lyfrnodau</string>
+    <string name="no_location_title">Wedi methu canfod lleoliad</string>
+    <string name="no_location_message">Mae angen lleoliad ar MonTag i gadw eich safle gyda negeseuon. Golygu gosodiadau lleoliad?</string>
+    <string name="no_location">Methu â dod o hyd i\'ch lleoliad – gwnewch yn siŵr bod GPS neu gysylltiad rhwydwaith wedi\'u galluogi</string>
+    <string name="new_version_title">Fersiwn cais newydd</string>
+    <string name="new_version_message">Mae fersiwn newydd o MonTag ar gael – rhaid i chi ddiweddaru i barhau</string>
+    <string name="new_version_failure">Ymddiheuriadau, methu dod o hyd i\'r siop Android ar y ddyfais hon</string>
+    <string name="banned_user_title">Wedi gwahardd</string>
+    <string name="banned_user_message">Oherwydd cwynion mae eich cyfrif wedi\'i wahardd rhag defnyddio MonTag. Os ydych yn credu mai camgymeriad yw hyn, cysylltwch â ni.</string>
+    <string name="banned_user_email_title">Ynghylch: wedi gwahardd rhag defnyddio MonTag</string>
+    <string name="contact_email">qrpedia@gmail.com</string>
+    <string name="contact_email_failure">Ymddiheuriadau, methu ag agor neges e-bost – rhowch gynnig eto</string>
+    <string name="post_message_failure">Ymddiheuriadau, methu â phostio\'ch neges – rhowch gynnig eto</string>
+
+    <!-- buttons -->
+    <string name="btn_log_in">Cychwyn ›</string>
+    <string name="btn_discard">Gwaredu</string>
+    <string name="btn_delete">Dileu</string>
+    <string name="btn_save">Cadw</string>
+    <string name="btn_cancel">Canslo</string>
+    <string name="btn_settings">Gosodiadau</string>
+    <string name="btn_update">Diweddaru</string>
+    <string name="btn_exit">Cau</string>
+    <string name="btn_contact">Cyswllt</string>
+
+    <!-- questionnaire -->
+    <string name="btn_previous">‹ Blaenorol</string>
+    <string name="btn_next">Nesaf ›</string>
+    <string name="btn_finish">Gorffen</string>
+    <string name="questionnaire_negative">‹ Dim o gwbl</string>
+    <string name="questionnaire_positive">Yn fawr ›</string>
+    <string name="questionnaire_hint">Dewiswch eich ateb gan ddefnyddio\'r llithrydd</string>
+    <string name="questionnaire_thanks">Diolch am gwblhau\'r holiadur</string>
+    <string name="questionnaire_intro_title">Helpwch ni i wella</string>
+    <string name="questionnaire_intro">Helpwch ni i wella MonTag drwy ateb dau gwestiwn sydyn.\n\nBydd eich atebion yn ein helpu gydag ymchwil ar gyfer y dyfodol ac i ddatblygu\'r app. Mae\'r holl atebion yn ddienw.\n\nPeidiwch â phoeni, byddwn ni ddim yn eich poeni o hyd – bydd y cwestiynau hyn dim ond yn cael eu dangos unwaith.</string>
+    <string name="questionnaire_q1_title">Cwestiwn 1</string>
+    <string name="questionnaire_q1">I ba raddau y mae gallu ychwanegu negeseuon i godau\'n ychwanegu at brofiad Pedia-Trefynwy QR ar y cyfan?</string>
+    <string name="questionnaire_q2_title">Cwestiwn 2</string>
+    <string name="questionnaire_q2">I ba raddau y gwnaeth y negeseuon a adawyd gan bobl eraill wella eich profiad Pedia-Trefynwy QR?</string>
+    <string name="questionnaire_no_messages">Ni welais unrhyw negeseuon a adawyd gan bobl eraill</string>
+    <string name="questionnaire_end_title">Diolch!</string>
+    <string name="questionnaire_end">Os oes unrhyw sylwadau pellach gennych am MonTag, gadewch nhw yn y blwch isod. Os hoffech i ni gysylltu â chi, gadewch eich manylion cyswllt hefyd. Diolch am eich amser.</string>
+    <string name="questionnaire_comments_hint">Rhowch unrhyw sylwadau pellach yma</string>
+
+    <!-- welcome screen -->
+    <string name="welcome_title">Croeso i MonTag</string>
+    <string name="welcome_message">MonTag yw app tagio swyddogol MonmouthpediA Gyda\'r app, gallwch sganio ac edrych ar yr holl godau QR o amgylch y dref, ond hefyd ychwanegu eich barn a\'ch sylwadau eich hun i bob un. Ysgrifennwch am eich profiadau ar lwybr Trefynwy, neu edrychwch ar beth mae pobl eraill wedi postio am adeilad hanesyddol – chi sydd a\'r dewis.\n\nGwasgwch Cychwyn i ddechrau…</string>
+    <string name="welcome_wait_for_install">Arhoswch am y gosodiad i gwblhau, yna rhowch gynnig eto</string>
+    <string name="welcome_install_error">Gwall: methu â dod o hyd i Google Play Services i fewngofnodi. Adroddwch y gwall hwn.</string>
+
+    <!-- barcode scanner items -->
+    <string name="msg_default_status">Rhowch god y tu mewn i\'r ffenestr i\'w sganio</string>
+    <string name="msg_camera_error">Ymddiheuriadau, mae\'r camera wedi dod ar draws problem - mae\'n bosib y bydd angen i chi ailddechrau\'r ddyfais</string>
+
+</resources>

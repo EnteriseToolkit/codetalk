@@ -1,0 +1,10 @@
+# ProGuard Configuration file
+#
+# See http://proguard.sourceforge.net/index.html#manual/usage.html
+
+# see: http://stackoverflow.com/questions/11151284/obfuscation-in-actionbarsherlock
+-keep class android.support.v4.app.** { *; } 
+-keep interface android.support.v4.app.** { *; } 
+-keep class com.actionbarsherlock.** { *; } 
+-keep interface com.actionbarsherlock.** { *; } 
+-keepattributes *Annotation*

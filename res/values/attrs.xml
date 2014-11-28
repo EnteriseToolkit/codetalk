@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- the package name of this application on Google Play -->
+    <string name="market_package" translatable="false">qr.cloud.qrpedia</string>
+
+    <!-- font names -->
+    <string name="default_font" translatable="false">Roboto-Regular.ttf</string>
+    <string name="default_font_bold" translatable="false">Roboto-Bold.ttf</string>
+
+    <!-- intent keys -->
+    <string name="key_location_tab_visited" translatable="false">key_location_tab_visited</string>
+    <string name="key_location_request_time" translatable="false">key_location_request_time</string>
+    <string name="key_started_scanning" translatable="false">key_started_scanning</string>
+    <string name="key_display_title" translatable="false">key_display_title</string>
+    <string name="key_display_contents" translatable="false">key_display_contents</string>
+    <string name="key_product_details" translatable="false">key_product_details</string>
+    <string name="key_questionnaire_progress" translatable="false">key_questionnaire_progress</string>
+    <string name="key_questionnaire_q1_answered" translatable="false">key_questionnaire_q1_answered</string>
+    <string name="key_questionnaire_q2_answered" translatable="false">key_questionnaire_q2_answered</string>
+
+    <!-- preference/check keys -->
+    <string name="pref_use_location" translatable="false">pref_use_location</string>
+    <string name="check_version_time" translatable="false">check_version_time</string>
+    <string name="check_ban_time" translatable="false">check_ban_time</string>
+    <string name="check_codes_scanned" translatable="false">check_codes_scanned</string>
+    <string name="check_questionnaire_completed" translatable="false">check_questionnaire_completed</string>
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/message_vertical_margin"
+    android:paddingLeft="@dimen/message_left_margin"
+    android:paddingRight="@dimen/message_left_margin"
+    android:paddingTop="@dimen/message_vertical_margin" >
+
+    <TextView
+        android:id="@+id/imported_bookmark_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ellipsize="marquee"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="?android:textColorPrimary"
+        android:textIsSelectable="false"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/imported_bookmark_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/imported_bookmark_title"
+        android:ellipsize="marquee"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/faded_text"
+        android:textColorLink="@color/message_link"
+        android:textIsSelectable="false"
+        android:textSize="11sp"
+        tools:ignore="SmallSp" />
+
+</RelativeLayout>

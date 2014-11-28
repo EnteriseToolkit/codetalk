@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:paddingBottom="@dimen/message_vertical_margin"
+    android:paddingLeft="@dimen/message_left_margin"
+    android:paddingRight="@dimen/message_left_margin"
+    android:paddingTop="@dimen/message_vertical_margin" > <!-- left for right margin is intentional - no need to account for time here -->
+
+    <ProgressBar
+        android:id="@+id/message_loading_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:indeterminateOnly="true" />
+
+    <TextView
+        android:id="@+id/message_loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/message_left_margin"
+        android:layout_toRightOf="@id/message_loading_progress"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

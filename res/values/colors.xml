@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="pressed_qrpedia">#cc3d98ff</color>
+    <color name="message_link">#377fd2</color>
+    <color name="viewflipper_indicator_selected">#377fd2</color>
+    <color name="viewflipper_indicator_unselected">#cccccc</color>
+    <color name="faded_text">#cca9a9a9</color>
+    <color name="list_divider">#aad5d5d5</color>
+
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="qr.cloud.qrpedia"
+    android:versionCode="22"
+    android:versionName="1.2.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <permission
+        android:name="qr.cloud.qrpedia.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false" />
+
+    <!-- for taking barcode/QR code photos -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- for detecting whether we have an internet connection -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- for getting the current location (only when the location button is pressed) -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- for inserting bookmarks directly -->
+    <!-- <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" /> -->
+
+
+    <!-- for logging in automatically -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <!-- for cloud storage and messaging -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="qr.cloud.qrpedia.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name="qr.cloud.locale.QRpediaApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@drawable/ic_launcher_inverse"
+        android:theme="@style/Theme.QRpedia" >
+
+        <!-- configChanges now required - see: https://code.google.com/p/android/issues/detail?id=53079 -->
+        <!-- note that this slightly breaks Welsh on pre-4.2.1 devices (title isn't updated until restart) -->
+        <activity
+            android:name="qr.cloud.qrpedia.WelcomeActivity"
+            android:configChanges="locale|layoutDirection"
+            android:theme="@style/Theme.QRpedia.Welcome" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="qr.cloud.qrpedia.ScannerActivity"
+            android:configChanges="locale|layoutDirection"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.QRpedia.Overlaid" />
+        <activity
+            android:name="qr.cloud.qrpedia.MessageViewerActivity"
+            android:configChanges="locale|layoutDirection"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name="qr.cloud.qrpedia.MessageEditorActivity"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/title_message_editor"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="qr.cloud.qrpedia.MyTagsListActivity"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/title_posted_messages" />
+        <activity
+            android:name="qr.cloud.qrpedia.SavedTextListActivity"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/title_saved_messages" />
+        <activity
+            android:name="qr.cloud.qrpedia.SavedTextEditorActivity"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/title_clipping_editor_no_length"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="qr.cloud.qrpedia.QuestionnaireActivity"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/title_questionnaire"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <provider
+            android:name="qr.cloud.util.QRCloudProvider"
+            android:authorities="qr.cloud.qrpedia.SavedTextProvider"
+            android:exported="false"
+            android:multiprocess="true"
+            tools:ignore="MissingRegistered" />
+
+        <service android:name="qr.cloud.qrpedia.GCMIntentService" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="qr.cloud.qrpedia" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

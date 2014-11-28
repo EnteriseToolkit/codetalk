@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">MonTag</string>
+    <string name="language_name">English</string>
+    <string name="title_message_editor">Add a message (%1$s)</string>
+    <string name="title_clipping_editor">Save a message (%1$s)</string>
+    <string name="title_clipping_editor_no_length">MonTag clipping</string>
+    <string name="title_saved_messages">Saved messages</string>
+    <string name="title_posted_messages">Messages I\'ve posted</string>
+    <string name="title_questionnaire">Improve MonTag</string>
+
+    <!-- menu items -->
+    <string name="menu_add_content">Add a MonTag message</string>
+    <string name="menu_overflow">Show more options</string>
+    <string name="menu_scan_again">Scan another code</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_add_location">Add your location</string>
+    <string name="menu_remove_location">Remove your location</string>
+    <string name="menu_import_link">Import a link</string>
+    <string name="menu_import_clipping">Import a message</string>
+    <string name="menu_clippings_library">Saved messages</string>
+    <string name="menu_visitor_guide">MonmouthpediA video</string>
+    <string name="menu_change_language">Newid i\'r Gymraeg</string>
+    <string name="menu_my_tags">Messages I\'ve posted</string>
+    <string name="menu_add_clipping">Add a saved message</string>
+    <string name="menu_add_bookmark">Add a link</string>
+
+    <!-- hints / message dialogs -->
+    <string name="message_text_hint">What\'s your MonTag message?</string>
+    <string name="empty_list_hint">%1$s – why don\'t you add one?</string>
+    <string name="no_nearby_messages">No nearby messages found</string>
+    <string name="no_self_messages">You haven\'t placed any messages on this code</string>
+    <string name="no_popular_messages">No popular MonTag messages found</string>
+    <string name="no_recent_messages">No recent MonTag messages found</string>
+    <string name="new_message">New MonTag message</string>
+    <string name="save_message">Save message?</string>
+    <string name="message_options">Message options</string>
+    <string name="clipping_options">Message options</string>
+    <string name="add_to_clippings">Save message</string>
+    <string name="report_item">Report message</string>
+    <string name="delete_item">Delete message</string>
+    <string name="item_added_to_clippings">The item has been added to your saved messages</string>
+    <string name="item_reported">Thank you – this message has been reported</string>
+    <string name="item_deleted">Deleted – this message will no longer appear</string>
+    <string name="loading_messages">Loading %1$s messages for this code</string>
+    <string name="loading_recent">recent</string>
+    <string name="loading_nearby">nearby</string>
+    <string name="loading_popular">popular</string>
+    <string name="loading_your">your</string>
+
+    <!-- error dialogs -->
+    <string name="message_posting_cancel_title">Cancel message</string>
+    <string name="message_posting_cancel_message">This message is taking a long time to send – stop sending?</string>
+    <string name="message_posting_cancel_wait">Wait</string>
+    <string name="message_posting_cancel_stop">Stop</string>
+    <string name="no_internet_hint">Connection failed – MonTag needs network access to %1$s messages</string>
+    <string name="no_internet_task_view">view</string>
+    <string name="no_internet_task_post">post</string>
+    <string name="no_saved_messages">You haven\'t saved any messages yet. Store clippings in here to quickly add your message to any code.</string>
+    <string name="no_saved_messages_toast">You haven\'t saved any messages yet</string>
+    <string name="no_posted_messages">You haven\'t attached any messages to codes yet. When you post a message, it will appear in here.</string>
+    <string name="no_bookmarks">No bookmarks were found</string>
+    <string name="no_location_title">Location detection failed</string>
+    <string name="no_location_message">MonTag needs a location source to save your position with messages. Edit location settings?</string>
+    <string name="no_location">Unable to find your location – please ensure GPS or a network connection is enabled</string>
+    <string name="new_version_title">New application version</string>
+    <string name="new_version_message">A new version of MonTag is available – you must update to continue</string>
+    <string name="new_version_failure">Sorry, couldn\'t find the Android store on this device</string>
+    <string name="banned_user_title">Forbidden</string>
+    <string name="banned_user_message">Due to complaints, your account has been forbidden from using MonTag If you think this is in error, please contact us.</string>
+    <string name="banned_user_email_title">Re: forbidden from using MonTag</string>
+    <string name="contact_email">qrpedia@gmail.com</string>
+    <string name="contact_email_failure">Sorry, couldn\'t open an email message – please try again</string>
+    <string name="post_message_failure">Sorry, couldn\'t post your message – please try again</string>
+
+    <string-array name="message_options_values_self">
+        <item>@string/add_to_clippings</item>
+        <item>@string/delete_item</item>
+    </string-array>
+    <string-array name="message_options_values_other">
+        <item>@string/add_to_clippings</item>
+        <item>@string/report_item</item>
+    </string-array>
+    <string-array name="clipping_options_values">
+        <item>@string/btn_delete</item>
+    </string-array>
+
+    <!-- buttons -->
+    <string name="btn_log_in">Get started ›</string>
+    <string name="btn_discard">Discard</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_settings">Settings</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_exit">Exit</string>
+    <string name="btn_contact">Contact</string>
+
+    <!-- questionnaire -->
+    <string name="btn_previous">‹ Previous</string>
+    <string name="btn_next">Next ›</string>
+    <string name="btn_finish">Finish</string>
+    <string name="questionnaire_negative">‹ Not at all</string>
+    <string name="questionnaire_positive">Greatly ›</string>
+    <string name="questionnaire_hint">Please select your answer using the slider</string>
+    <string name="questionnaire_thanks">Thank you for completing the questionnaire</string>
+    <string name="questionnaire_intro_title">Help us improve</string>
+    <string name="questionnaire_intro">Please help us make MonTag better by answering two quick questions.\n\nYour answers will help us with future research and development of the app. All answers are anonymous.\n\nDon\'t worry, we won\'t keep pestering you – these questions will only be shown once.</string>
+    <string name="questionnaire_q1_title">Question 1</string>
+    <string name="questionnaire_q1">To what extent does being able to add messages to codes add to the overall MonmouthpediA QR experience?</string>
+    <string name="questionnaire_q2_title">Question 2</string>
+    <string name="questionnaire_q2">To what extent did the messages left by other people enhance your MonmouthpediA QR experience?</string>
+    <string name="questionnaire_no_messages">I didn\'t see any messages left by other people</string>
+    <string name="questionnaire_end_title">Thank you!</string>
+    <string name="questionnaire_end">If you have any further comments about MonTag, please leave them in the box below. If you\'d like us to get back to you, please also leave your contact details. Thank you for your time.</string>
+    <string name="questionnaire_comments_hint">Enter any further comments here</string>
+
+    <!-- welcome screen -->
+    <string name="welcome_title">Welcome to MonTag</string>
+    <string name="welcome_message">MonTag is the official MonmouthpediA tagging app. With it, you can scan and view all the QR codes around the town, but also add your own thoughts and comments to each one. Write about your experiences on a Monmouth trail, or look at what others have posted about a historical building – the choice is yours.\n\nTap Get started to begin…</string>
+    <string name="welcome_wait_for_install">Please wait for the installation to complete, then try again</string>
+    <string name="welcome_install_error">Error: unable to find Google Play Services to complete sign in. Please report this error.</string>
+
+    <!-- barcode scanner items -->
+    <string name="msg_default_status">Place a code inside the viewfinder to scan it</string>
+    <string name="msg_camera_error">Sorry, the camera encountered a problem – you may need to restart the device</string>
+
+</resources>

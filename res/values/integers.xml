@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="max_message_characters">140</integer>
+    <integer name="message_post_timeout">5000</integer> <!-- after this long trying to post a message, pressing back will prompt to cancel (in milliseconds) -->
+    <integer name="minimum_cloud_refresh_time">10000</integer> <!-- how often they can refresh (in milliseconds) -->
+    <integer name="minimum_location_refresh_time">10000</integer> <!-- how often we check for new location updates (in milliseconds) -->
+    <integer name="ban_check_interval">86400000</integer> <!-- how often we check for user bans, approximately (in milliseconds) -->
+    <integer name="version_check_interval">86400000</integer> <!-- how often we check for new versions, approximately (in milliseconds) -->
+
+</resources>

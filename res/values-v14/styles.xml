@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <style name="Theme.QRpedia" parent="@style/Theme.Sherlock.Light">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_qrpedia</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.QRpedia</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.QRpedia</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.QRpedia</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.QRpedia</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.QRpedia</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_qrpedia</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_qrpedia</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.QRpedia</item>
+        <item name="android:homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>
+        <item name="android:seekBarStyle">@style/Scrubber.QRpedia</item>
+    </style>
+
+    <style name="Theme.QRpedia.Overlaid" parent="Theme.QRpedia">
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="ActionBar.Solid.QRpedia" parent="@style/Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_solid_qrpedia</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_qrpedia</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_qrpedia</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.QRpedia</item>
+    </style>
+
+    <style name="ActionBar.Transparent.QRpedia" parent="@style/Widget.Sherlock.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_qrpedia</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.QRpedia</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.QRpedia.Widget" parent="@style/Theme.Sherlock">
+        <item name="android:popupMenuStyle">@style/PopupMenu.QRpedia</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.QRpedia</item>
+    </style>
+
+</resources>

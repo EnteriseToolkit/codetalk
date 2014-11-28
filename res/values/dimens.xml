@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- right is approximate to account for date size and date_right_margin -->
+    <dimen name="message_vertical_margin">10dp</dimen>
+    <dimen name="message_left_margin">16dp</dimen>
+    <dimen name="message_right_margin">5dp</dimen>
+    <dimen name="date_top_margin">2dp</dimen>
+    <dimen name="date_right_margin">8dp</dimen>
+
+    <!-- view flipper indicator -->
+    <dimen name="view_flipper_margin">2dp</dimen>
+    <dimen name="view_flipper_radius">6dp</dimen>
+
+</resources>

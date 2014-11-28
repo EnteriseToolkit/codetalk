@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_import_link"
+        android:icon="@drawable/ic_action_link"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_import_link"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_import_clipping"
+        android:icon="@drawable/ic_action_paste"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_import_clipping"/>
+
+</menu>
